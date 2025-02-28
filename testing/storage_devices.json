@@ -1,0 +1,527 @@
+                                                                                                                                                                                                                                  {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:05:00.0",
+    "description" : "SATA controller",
+    "product" : "88SE9172 SATA 6Gb/s Controller",
+    "vendor" : "Marvell Technology Group Ltd.",
+    "physid" : "0",
+    "businfo" : "pci@0000:05:00.0",
+    "version" : "11",
+    "width" : 32,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "pciexpress" : "PCI Express",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM"
+    }
+  }            {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:06:00.0",
+    "description" : "SATA controller",
+    "product" : "88SE9172 SATA 6Gb/s Controller",
+    "vendor" : "Marvell Technology Group Ltd.",
+    "physid" : "0",
+    "businfo" : "pci@0000:06:00.0",
+    "version" : "11",
+    "width" : 32,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "pciexpress" : "PCI Express",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM"
+    }
+  }            {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:07:00.0",
+    "description" : "SATA controller",
+    "product" : "88SE9172 SATA 6Gb/s Controller",
+    "vendor" : "Marvell Technology Group Ltd.",
+    "physid" : "0",
+    "businfo" : "pci@0000:07:00.0",
+    "version" : "11",
+    "width" : 32,
+    "clock" : 33000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "pm" : "Power Management",
+      "msi" : "Message Signalled Interrupts",
+      "pciexpress" : "PCI Express",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing",
+      "rom" : "extension ROM"
+    }
+  }                                                      {
+    "id" : "usb:0",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "USB:2:7",
+    "description" : "Mass storage device",
+    "product" : "BUP Slim BK",
+    "vendor" : "Seagate",
+    "physid" : "3",
+    "businfo" : "usb@2:1.3",
+    "logicalname" : "scsi13",
+    "version" : "1.09",
+    "serial" : "NA9TS9PT",
+    "configuration" : {
+      "driver" : "uas",
+      "maxpower" : "500mA",
+      "speed" : "480Mbit/s"
+    },
+    "capabilities" : {
+      "usb-2.10" : true,
+      "scsi" : "SCSI"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:13:00:00:00",
+        "description" : "SCSI Disk",
+        "product" : "BUP Slim BK",
+        "vendor" : "Seagate",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@13:0.0.0",
+        "logicalname" : "/dev/sdg",
+        "dev" : "8:96",
+        "version" : "0109",
+        "serial" : "NA9TS9PT",
+        "units" : "bytes",
+        "size" : 2000398933504,
+        "configuration" : {
+          "ansiversion" : "6",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "4096",
+          "signature" : "236b2131"
+        },
+        "capabilities" : {
+          "partitioned" : "Partitioned disk",
+          "partitioned:dos" : "MS-DOS partition table"
+        },
+        "children" : [
+          
+        ]
+      }
+    ]
+  },
+      {
+    "id" : "usb:1",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "SCSI:12",
+    "description" : "Mass storage device",
+    "product" : "USB DISK 2.0",
+    "physid" : "4",
+    "businfo" : "usb@2:1.4",
+    "logicalname" : "scsi12",
+    "version" : "1.00",
+    "serial" : "9000762402077713",
+    "configuration" : {
+      "driver" : "usb-storage",
+      "maxpower" : "200mA",
+      "speed" : "480Mbit/s"
+    },
+    "capabilities" : {
+      "usb-2.00" : "USB 2.0",
+      "scsi" : "SCSI",
+      "emulated" : "Emulated device",
+      "scsi-host" : "SCSI host adapter"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:12:00:00:00",
+        "description" : "SCSI Disk",
+        "product" : "USB DISK 2.0",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@12:0.0.0",
+        "logicalname" : "/dev/sdf",
+        "dev" : "8:80",
+        "version" : "PMAP",
+        "serial" : "970701037060",
+        "units" : "bytes",
+        "size" : 7746879488,
+        "configuration" : {
+          "ansiversion" : "6",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "512"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "physid" : "0",
+            "logicalname" : "/dev/sdf",
+            "dev" : "8:80",
+            "units" : "bytes",
+            "size" : 7746879488,
+            "configuration" : {
+              "signature" : "8fddda90"
+            },
+            "capabilities" : {
+              "partitioned" : "Partitioned disk",
+              "partitioned:dos" : "MS-DOS partition table"
+            },
+            "children" : [
+              
+            ]
+          }
+        ]
+      }
+    ]
+  }                  {
+    "id" : "storage",
+    "class" : "storage",
+    "claimed" : true,
+    "handle" : "PCI:0000:00:1f.2",
+    "description" : "SATA controller",
+    "product" : "C600/X79 series chipset 6-Port SATA AHCI Controller",
+    "vendor" : "Intel Corporation",
+    "physid" : "1f.2",
+    "businfo" : "pci@0000:00:1f.2",
+    "version" : "06",
+    "width" : 32,
+    "clock" : 66000000,
+    "configuration" : {
+      "driver" : "ahci",
+      "latency" : "0"
+    },
+    "capabilities" : {
+      "storage" : true,
+      "msi" : "Message Signalled Interrupts",
+      "pm" : "Power Management",
+      "ahci_1.0" : true,
+      "bus_master" : "bus mastering",
+      "cap_list" : "PCI capabilities listing"
+    }
+  },
+                                                                                                                                                                                                                                                                        {
+    "id" : "scsi:0",
+    "class" : "storage",
+    "claimed" : true,
+    "physid" : "1",
+    "logicalname" : "scsi0",
+    "capabilities" : {
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:00:00:00:00",
+        "description" : "ATA Disk",
+        "product" : "OCZ-VERTEX3",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@0:0.0.0",
+        "logicalname" : "/dev/sda",
+        "dev" : "8:0",
+        "version" : "2.25",
+        "serial" : "OCZ-28U6PGBC9092GSQY",
+        "units" : "bytes",
+        "size" : 240057409536,
+        "configuration" : {
+          "ansiversion" : "5",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "512"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "physid" : "0",
+            "logicalname" : "/dev/sda",
+            "dev" : "8:0",
+            "units" : "bytes",
+            "size" : 240057409536,
+            "configuration" : {
+              "signature" : "5310f7c2"
+            },
+            "capabilities" : {
+              "partitioned" : "Partitioned disk",
+              "partitioned:dos" : "MS-DOS partition table"
+            },
+            "children" : [
+                            
+            ]
+          }
+        ]
+      }
+    ]
+  },
+      {
+    "id" : "scsi:1",
+    "class" : "storage",
+    "claimed" : true,
+    "physid" : "2",
+    "logicalname" : "scsi1",
+    "capabilities" : {
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:01:00:00:00",
+        "description" : "ATA Disk",
+        "product" : "KINGSTON SHSS37A",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@1:0.0.0",
+        "logicalname" : "/dev/sdb",
+        "dev" : "8:16",
+        "version" : "02.H",
+        "serial" : "50026B76740290EF",
+        "units" : "bytes",
+        "size" : 240057409536,
+        "configuration" : {
+          "ansiversion" : "5",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "512"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "handle" : "GUID:e263304e-75ac-4af3-bccd-6b7a280df28b",
+            "physid" : "0",
+            "logicalname" : "/dev/sdb",
+            "dev" : "8:16",
+            "units" : "bytes",
+            "size" : 240057409536,
+            "configuration" : {
+              "guid" : "e263304e-75ac-4af3-bccd-6b7a280df28b"
+            },
+            "capabilities" : {
+              "gpt-1.00" : "GUID Partition Table version 1.00",
+              "partitioned" : "Partitioned disk",
+              "partitioned:gpt" : "GUID partition table"
+            },
+            "children" : [
+                                          
+            ]
+          }
+        ]
+      }
+    ]
+  },
+      {
+    "id" : "scsi:2",
+    "class" : "storage",
+    "claimed" : true,
+    "physid" : "3",
+    "logicalname" : "scsi3",
+    "capabilities" : {
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:03:00:00:00",
+        "description" : "ATA Disk",
+        "product" : "WDC WD20EFRX-68E",
+        "vendor" : "Western Digital",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@3:0.0.0",
+        "logicalname" : "/dev/sdc",
+        "dev" : "8:32",
+        "version" : "0A82",
+        "serial" : "WD-WCC4M1CAC714",
+        "units" : "bytes",
+        "size" : 2000398934016,
+        "configuration" : {
+          "ansiversion" : "5",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "4096"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "physid" : "0",
+            "logicalname" : "/dev/sdc",
+            "dev" : "8:32",
+            "units" : "bytes",
+            "size" : 2000398934016,
+            "configuration" : {
+              "signature" : "5dca883a"
+            },
+            "capabilities" : {
+              "partitioned" : "Partitioned disk",
+              "partitioned:dos" : "MS-DOS partition table"
+            },
+            "children" : [
+              
+            ]
+          }
+        ]
+      }
+    ]
+  },
+      {
+    "id" : "scsi:3",
+    "class" : "storage",
+    "claimed" : true,
+    "physid" : "5",
+    "logicalname" : "scsi4",
+    "capabilities" : {
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:04:00:00:00",
+        "description" : "ATA Disk",
+        "product" : "SAMSUNG HD501LJ",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@4:0.0.0",
+        "logicalname" : "/dev/sdd",
+        "dev" : "8:48",
+        "version" : "0-10",
+        "serial" : "S0MUJ1PP503771",
+        "units" : "bytes",
+        "size" : 500107862016,
+        "configuration" : {
+          "ansiversion" : "5",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "512"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "physid" : "0",
+            "logicalname" : "/dev/sdd",
+            "dev" : "8:48",
+            "units" : "bytes",
+            "size" : 500107862016,
+            "configuration" : {
+              "signature" : "59adca9f"
+            },
+            "capabilities" : {
+              "partitioned" : "Partitioned disk",
+              "partitioned:dos" : "MS-DOS partition table"
+            },
+            "children" : [
+              
+            ]
+          }
+        ]
+      }
+    ]
+  },
+      {
+    "id" : "scsi:4",
+    "class" : "storage",
+    "claimed" : true,
+    "physid" : "6",
+    "logicalname" : "scsi5",
+    "capabilities" : {
+      "emulated" : "Emulated device"
+    },
+    "children" : [
+      {
+        "id" : "disk",
+        "class" : "disk",
+        "claimed" : true,
+        "handle" : "SCSI:05:00:00:00",
+        "description" : "ATA Disk",
+        "product" : "ST3120827AS",
+        "vendor" : "Seagate",
+        "physid" : "0.0.0",
+        "businfo" : "scsi@5:0.0.0",
+        "logicalname" : "/dev/sde",
+        "dev" : "8:64",
+        "version" : "3.42",
+        "serial" : "4MS07QFV",
+        "units" : "bytes",
+        "size" : 120033041920,
+        "configuration" : {
+          "ansiversion" : "5",
+          "logicalsectorsize" : "512",
+          "sectorsize" : "512"
+        },
+        "capabilities" : {
+          "removable" : "support is removable"
+        },
+        "children" : [
+          {
+            "id" : "medium",
+            "class" : "disk",
+            "claimed" : true,
+            "physid" : "0",
+            "logicalname" : "/dev/sde",
+            "dev" : "8:64",
+            "units" : "bytes",
+            "size" : 120033041920,
+            "configuration" : {
+              "signature" : "7460b2d3"
+            },
+            "capabilities" : {
+              "partitioned" : "Partitioned disk",
+              "partitioned:dos" : "MS-DOS partition table"
+            },
+            "children" : [
+                            
+            ]
+          }
+        ]
+      }
+    ]
+  }    
