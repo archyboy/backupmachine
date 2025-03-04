@@ -200,7 +200,7 @@ if (answer == "y" or answer == "Y"):
 
     print()
 
-    print("Deep scanning for files with", extensions,
+    print("Deep scanning for files with", extension,
           "extension(s) in binary mode.....This can take a long time!")
     found_files_deep = filefinder.getFilesByType(extension, filepath_index)
     print("Found", len(found_files_deep), "files in",

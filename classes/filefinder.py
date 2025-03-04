@@ -21,7 +21,7 @@ class FileFinder:
 
     def updateDB(args):
 
-        system.call("updatedb --output dbs/media-terra.db --database-root /run/media/archy/terra")
+        system("updatedb --output dbs/media-terra.db --database-root /run/media/archy/terra")
         #with Popen(args, stdout=PIPE) as p:
         #    try:
         #        return p.wait(timeout=None)
