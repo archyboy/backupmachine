@@ -9,7 +9,7 @@ from classes.helper import Helper as helper
 import subprocess
 from time import time
 
-import system
+from os import system
 import modules.colorize as bcolors
 
 # Class to index and locate files in the filesystem using Popen("Linux command", "OPTION")

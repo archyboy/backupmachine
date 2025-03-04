@@ -3,7 +3,7 @@ import os
 import io
 import sys
 import locale
-import system
+from os import system
 
 class Rsync:
 
